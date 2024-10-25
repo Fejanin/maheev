@@ -51,6 +51,7 @@ for i in result:
     if result[i]['заказ в коробках']:
         data[result[i]['метка']] = (result[i]['FA'], result[i]['заказ в коробках'])
 
+
 order_file = input('Введите название заводского бланка для заказа: ')
 
 wb = openpyxl.load_workbook(order_file)
