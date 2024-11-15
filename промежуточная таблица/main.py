@@ -50,7 +50,7 @@ def read_table(file):
 
 
 def read_matrix():
-    file = 'матрица.xlsx'
+    file = 'matrix.xlsx'
     wb = openpyxl.load_workbook(file, data_only=True)
     ws = wb.active
 
