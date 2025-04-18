@@ -21,11 +21,12 @@ def read_table(file):
 
     for i in range(1, cols + 1):
         if ws.cell(row = 1, column = i).value:
+            print(f'{ws.cell(row = 1, column = i).value = }')
             if ws.cell(row = 1, column = i).value.lower().strip() == name1:
                 col1 = i
             if ws.cell(row = 1, column = i).value.lower().strip() == name2:
                 col2 = i
-
+    
 
     for i in range(1, rows + 1):
         data = {}
